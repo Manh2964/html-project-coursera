@@ -3,82 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exploring Michigan's Exciting Annual Events</title>
+    <meta name="description" content="Michigan's vibrant annual festivals and events. Explore exciting festivals like Tulip Festival, Ice Sculpture Festival, and more.">
+    <meta name="author" content="Michigan Events">
+    <title>Exciting Michigan Annual Events</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
-    <header>
+    <!-- Header Section with Navbar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Michigan Events</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
         <div class="hero">
-            <h1>Exploring Michigan's Exciting Annual Events</h1>
-            <p>Discover the vibrant festivals, stunning landscapes, and unique traditions of Michigan!</p>
+            <h2>Discover Michigan's Vibrant Annual Events</h2>
+            <p>From Tulip Festivals to Ice Sculptures, Michigan has something for everyone.</p>
         </div>
     </header>
 
-    <main>
-        <section class="event">
-            <h2>Lễ hội hoa Tulip tại Holland</h2>
-            <img src="tulip_festival.jpg" alt="Cánh đồng hoa tulip rực rỡ tại lễ hội Holland">
-            <p>Holland's Tulip Festival is a breathtaking celebration of flowers and culture every spring. The town becomes a colorful canvas, with vibrant tulips in full bloom, attracting thousands of visitors. Visitors can enjoy various cultural performances, art exhibitions, and local food vendors. It's a perfect blend of nature and culture.</p>
-            <p><strong>Event Highlights:</strong></p>
-            <ul>
-                <li>Over 5 million tulips in bloom</li>
-                <li>Traditional Dutch dances and performances</li>
-                <li>Delicious Dutch treats and food</li>
-            </ul>
-        </section>
+    <!-- Home Section with Introductory Content -->
+    <section id="home" class="intro">
+        <div class="intro-content">
+            <h2>Welcome to Michigan!</h2>
+            <p>Explore the diverse and colorful events that Michigan hosts every year. Whether you're a fan of flowers, ice sculptures, or music festivals, you'll find something special to experience here!</p>
+        </div>
+        <div class="intro-image">
+            <img src="michigan_intro.jpg" alt="Michigan Beautiful Landscape">
+        </div>
+    </section>
 
-        <section class="event">
-            <h2>Ngày hội Băng Tuyết tại Detroit</h2>
-            <img src="snow_festival.jpg" alt="Tượng băng tại ngày hội băng tuyết ở Detroit">
-            <p>Detroit hosts a magical snow and ice festival every winter, transforming the city into a winter wonderland. The festival features incredible ice sculptures, ice skating, and snow-related activities. Visitors can enjoy the winter beauty while indulging in hot cocoa and local winter delicacies. It’s a family-friendly event that brings the community together.</p>
-            <p><strong>Event Highlights:</strong></p>
-            <ul>
-                <li>Giant ice sculptures displayed throughout the city</li>
-                <li>Ice skating rink open to all ages</li>
-                <li>Snowman-building contests and hot cocoa stations</li>
-            </ul>
-        </section>
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <h2>Annual Events</h2>
 
-        <section class="event">
-            <h2>Đua thuyền buồm trên hồ Michigan</h2>
-            <img src="sailing.jpg" alt="Cuộc đua thuyền buồm đầy kịch tính trên hồ Michigan">
-            <p>The annual sailing races on Lake Michigan are thrilling to watch, with boats racing across the water. The event attracts professional sailors and enthusiasts from around the world. Spectators can watch the race from the shore or from boats. The competition is fierce, and the view of the shimmering lake with boats cutting through the water is unforgettable.</p>
-            <p><strong>Event Highlights:</strong></p>
-            <ul>
-                <li>Multiple categories of races for all skill levels</li>
-                <li>Spectator boats and viewing points along the shore</li>
-                <li>Live music and celebration after the race</li>
-            </ul>
-        </section>
+        <div class="event-card" data-aos="fade-up">
+            <img src="tulip_festival.jpg" alt="Tulip Festival in Holland">
+            <div class="event-info">
+                <h3>Tulip Festival</h3>
+                <p>Every spring, Holland transforms into a sea of vibrant colors with over 5 million tulips in bloom. Experience Dutch culture with traditional dances, food, and more!</p>
+                <a href="#details" class="btn-primary">Learn More</a>
+            </div>
+        </div>
 
-        <section class="event">
-            <h2>Lễ hội âm nhạc mùa hè tại Traverse City</h2>
-            <img src="summer_music_festival.jpg" alt="Biểu diễn âm nhạc tại lễ hội mùa hè Traverse City">
-            <p>Traverse City’s Summer Music Festival is a celebration of live music set against the stunning backdrop of Michigan’s lakes. This festival features performances from international artists, local bands, and a variety of genres including jazz, pop, rock, and classical. Visitors can enjoy great food, art, and of course, incredible music.</p>
-            <p><strong>Event Highlights:</strong></p>
-            <ul>
-                <li>Outdoor concerts with breathtaking views</li>
-                <li>Local food vendors offering regional dishes</li>
-                <li>Workshops and art exhibitions during the event</li>
-            </ul>
-        </section>
+        <div class="event-card" data-aos="fade-up">
+            <img src="snow_festival.jpg" alt="Snow Festival in Detroit">
+            <div class="event-info">
+                <h3>Snow Festival</h3>
+                <p>Detroit’s Snow Festival celebrates winter with ice sculptures, snowman-building contests, and other exciting winter activities.</p>
+                <a href="#details" class="btn-primary">Learn More</a>
+            </div>
+        </div>
 
-        <section class="event">
-            <h2>Hội chợ nông sản tại Ann Arbor</h2>
-            <img src="farmers_market.jpg" alt="Các sản phẩm tươi ngon tại hội chợ nông sản Ann Arbor">
-            <p>Ann Arbor’s Farmers Market is an excellent way to experience Michigan’s agricultural products. Every year, farmers from around the state gather to sell their fresh produce, artisanal products, and handmade goods. It's a lively market where you can support local businesses and enjoy the freshest fruits and vegetables.</p>
-            <p><strong>Event Highlights:</strong></p>
-            <ul>
-                <li>Fresh, organic produce from local farmers</li>
-                <li>Handmade goods and artisanal products</li>
-                <li>Live music and cooking demonstrations</li>
-            </ul>
-        </section>
-    </main>
+        <div class="event-card" data-aos="fade-up">
+            <img src="sailing_festival.jpg" alt="Sailing Festival on Lake Michigan">
+            <div class="event-info">
+                <h3>Sailing Festival</h3>
+                <p>Watch thrilling sailing races on Lake Michigan with live music, boat tours, and much more for the whole family.</p>
+                <a href="#details" class="btn-primary">Learn More</a>
+            </div>
+        </div>
 
+        <div class="event-card" data-aos="fade-up">
+            <img src="music_festival.jpg" alt="Summer Music Festival in Traverse City">
+            <div class="event-info">
+                <h3>Summer Music Festival</h3>
+                <p>Traverse City hosts an annual summer music festival featuring international artists, local food, and a beautiful lakeside setting.</p>
+                <a href="#details" class="btn-primary">Learn More</a>
+            </div>
+        </div>
+
+        <div class="event-card" data-aos="fade-up">
+            <img src="farmers_market.jpg" alt="Farmers Market in Ann Arbor">
+            <div class="event-info">
+                <h3>Farmers Market</h3>
+                <p>Ann Arbor’s Farmers Market offers fresh produce, handmade goods, and live entertainment each weekend. A true local gem!</p>
+                <a href="#details" class="btn-primary">Learn More</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Michigan Events</h2>
+        <div class="about-content">
+            <p>Our mission is to highlight and promote the best events across Michigan, from food festivals to outdoor adventures. We aim to provide an up-to-date guide to Michigan’s best cultural and recreational events to make your travel plans exciting and memorable!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 Michigan Events | All rights reserved</p>
+        <div class="footer-content">
+            <p>&copy; 2025 Michigan Events | All rights reserved</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" onclick="scrollToTop()">
+        &#8593; Top
+    </button>
 
     <script src="script.js"></script>
 </body>
