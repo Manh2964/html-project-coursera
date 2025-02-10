@@ -12,4 +12,19 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+
+    // Event fade-in effect as the user scrolls
+    const events = document.querySelectorAll('.event');
+    const handleScroll = () => {
+        const scrollPosition = window.scrollY + window.innerHeight;
+        events.forEach(event => {
+            if (event.offsetTop < scrollPosition) {
+                event.style.opacity = 1;
+                event.style.transform = 'translateY(0)';
+            }
+        });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll();  // Check the scroll position immediately when the page loads
 });
