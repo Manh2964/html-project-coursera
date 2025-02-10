@@ -75,14 +75,16 @@ body {
 
 .intro-image img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px;
 }
 
 /* Event Section */
 .events {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
     padding: 50px;
 }
 
@@ -95,12 +97,12 @@ body {
 }
 
 .event-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 }
 
 .event-card img {
     width: 100%;
-    height: 250px;
+    height: 200px;
     object-fit: cover;
     border-bottom: 2px solid #ddd;
 }
@@ -238,5 +240,10 @@ footer {
 
     .intro-image img {
         width: 100%;
+        height: 300px;
+    }
+
+    .events {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
 }
